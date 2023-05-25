@@ -13,12 +13,12 @@ public class GameController : MonoBehaviour
     {
         if (other.CompareTag("Bridge") && _isPotionSelected == false)
         {
-            _bridge.OnBreak.Invoke();
+            _bridge.Break();
         }
 
         if (other.CompareTag("Chest"))
         {
-            _chest.OnOpenChest.Invoke();
+            _chest.Open();
         }
 
         if (other.CompareTag("Potion"))

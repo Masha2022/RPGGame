@@ -5,7 +5,6 @@ using Random = UnityEngine.Random;
 
 public class Bridge : MonoBehaviour
 {
-    public Action OnBreak;
     private Rigidbody[] _rigidbodies;
     private NavMeshObstacle _navMeshObstacle;
     
@@ -16,7 +15,6 @@ public class Bridge : MonoBehaviour
     {
         _navMeshObstacle = GetComponent<NavMeshObstacle>();
         _rigidbodies = GetComponentsInChildren<Rigidbody>();
-        OnBreak += Break;
     }
 
     public void Break()

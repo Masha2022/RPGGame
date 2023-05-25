@@ -9,7 +9,6 @@ public class Chest : MonoBehaviour
     private void Awake()
     {
         _animator = GetComponent<Animator>();
-        OnOpenChest += Open;
     }
 
     public void Open()
