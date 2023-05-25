@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class Chest : MonoBehaviour
 {
-    public Action OnOpenChest;
     private Animator _animator;
 
     private void Awake()
